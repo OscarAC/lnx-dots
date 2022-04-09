@@ -1,0 +1,140 @@
+* {
+
+    background:                  rgba ( 0, 0, 0, 100 % );
+    background-alt:              rgba ( 59, 59, 59, 100 % );
+    text-primary:                rgba ( 126, 126, 126, 100 % );
+    text-secondary:              rgba ( 225, 225, 225, 100 % );
+    
+    background-color:            rgba ( 0, 0, 0, 0 % );
+}
+
+window {
+    background-color: @background;
+    border:           1;
+    padding:          5;
+    anchor:           north;
+    location:         north;
+    width:            100%;
+    y-offset:         31px;
+}
+
+mainbox {
+    border:  0;
+    padding: 0;
+}
+
+message {
+    border:       1px dash 0px 0px ;
+    border-color: @background-alt;
+    padding:      1px ;
+}
+
+textbox {
+    text-color: @text-secondary;
+}
+
+listview {
+    fixed-height: 0;
+    border:       2px dash 0px 0px ;
+    border-color: @background-alt;
+    spacing:      2px ;
+    scrollbar:    true;
+    padding:      2px 0px 0px ;
+}
+
+element {
+    border:  0;
+    padding: 1px ;
+}
+
+element-text {
+    background-color: @background;
+    text-color:       @text-primary;
+}
+
+element.normal.normal {
+    background-color: @background;
+    text-color:       @text-primary;
+}
+
+element.normal.urgent {
+    background-color: @background;
+    text-color:       @text-primary;
+}
+
+element.normal.active {
+    background-color: @background;
+    text-color:       @text-primary;
+}
+
+element.selected.normal {
+    background-color: @background-alt;
+    text-color:       @text-secondary;
+}
+
+element.selected.urgent {
+    background-color: @background;
+    text-color:       @text-secondary;
+}
+element.selected.active {
+    background-color: @background;
+    text-color:       @text-secondary;
+}
+element.alternate.normal {
+    background-color: @background;
+    text-color:       @text-secondary;
+}
+element.alternate.urgent {
+    background-color: @background;
+    text-color:       @text-secondary;
+}
+element.alternate.active {
+    background-color: @background;
+    text-color:       @text-secondary;
+}
+scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-width: 8px ;
+    padding:      0;
+}
+mode-switcher {
+    border:       2px dash 0px 0px ;
+    border-color: @background-alt;
+}
+button.selected {
+    background-color: @background-alt;
+    text-color:       @text-primary;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @text-secondary;
+    padding:    1px ;
+}
+
+case-indicator {
+    spacing:    0;
+    text-color: @text-primary;
+}
+
+entry {
+    spacing:    0;
+    text-color: @text-secondary;
+}
+
+prompt {
+    spacing:    0;
+    text-color: @text-primary;
+}
+
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @text-primary;
+}
