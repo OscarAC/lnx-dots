@@ -71,7 +71,7 @@ bindsym $mod+x exec betterlockscreen -l
 
 
 # start rofi.
-bindsym $mod+d exec --no-startup-id rofi -show drun -theme Monokai -icon-theme "Tela-circle" -show-icons
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme mainmenu -icon-theme "Tela-circle" -show-icons
 bindsym $mod+Shift+d exec --no-startup-id rofi -show run -theme Monokai
 
 # change focus
