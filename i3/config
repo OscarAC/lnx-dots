@@ -1,4 +1,3 @@
-#
 # Behaviour
 #
 
@@ -10,14 +9,13 @@ floating_modifier $mod
 
 
 
-#
 # Styling
 #
 
 gaps inner 7
 
 # Disable title bar
-font pango:monospace 0
+for_window [class="^.*"] border pixel 1
 
 # Colors
 set $bg #000000
@@ -37,7 +35,6 @@ client.urgent 		$border			$bg		$fg		$accent		$border
 
 
 
-#
 # Defines
 #
 
@@ -55,8 +52,6 @@ set $ws10 "10"
 
 
 
-
-#
 # Key Bindings
 #
 
@@ -189,10 +184,6 @@ bindsym $mod+r mode "resize"
 
 
 
-
-
-
-#
 # Execs
 #
 
@@ -216,7 +207,7 @@ exec --no-startup-id xrandr --output HDMI-1 --right-of eDP-1 --auto
 exec --no-startup-id xrandr --output HDMI-1 --primary --auto
 
 
-#
+
 # Workspace Assignment
 #
 
