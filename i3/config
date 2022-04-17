@@ -15,7 +15,7 @@ floating_modifier $mod
 gaps inner 7
 
 # Disable title bar
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 
 # Colors
 set $bg #000000
